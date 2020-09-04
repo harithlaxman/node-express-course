@@ -14,6 +14,11 @@ app.get('/users',function(req,res){
 	})
 })
 
+app.get('/users/:user', function(req,res){
+  console.log(req.params.user)
+  res.send("Worship the lord +")
+})
+
 app.listen(8080, function(){
   console.log("Server is running")
 })
